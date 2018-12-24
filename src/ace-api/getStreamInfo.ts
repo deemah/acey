@@ -4,7 +4,7 @@ import { normalizeIProxyUrl } from "./utils/normalizeIProxyUrl";
 import { StreamInfo, StreamSource } from "./types";
 
 async function getStreamInfo(iproxyPath: string, source: StreamSource, sid: string): Promise<StreamInfo> {
-    const url = `${iproxyPath}/ace/getstream?${formatStreamSourceQuery(source, sid)}&.mp4&format=json`;
+    const url = `${iproxyPath}/ace/getstream?${formatStreamSourceQuery(source, sid)}&format=json`;
     const res = await fetch(url);
     const data = await res.json();
 

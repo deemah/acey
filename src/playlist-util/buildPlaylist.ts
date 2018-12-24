@@ -49,7 +49,7 @@ function buildPlaylist(
             result += `#EXTGRP:${groupTitle}\n`;
         }
 
-        result += `${streamPath}/${getStreamTypePath(si)}/${si.stream.id}.mp4\n`;
+        result += `${streamPath}/${getStreamTypePath(si)}/${si.stream.id}.ts\n`;
     }
 
     return result;

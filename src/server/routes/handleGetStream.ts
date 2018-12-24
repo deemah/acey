@@ -14,7 +14,7 @@ function handleGetStream(
 ): void {
     server.route({
         method: "GET",
-        path: "/s/{type}/{id}.mp4",
+        path: "/s/{type}/{id}.ts",
         handler: (request: Request, h: ResponseToolkit) => {
             switch (request.params.type) {
                 case "ace":

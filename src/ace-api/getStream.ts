@@ -8,7 +8,7 @@ async function getStream(
     sid: string,
     requestInit?: RequestInit
 ): Promise<Response> {
-    const url = `${iproxyPath}/ace/getstream?${formatStreamSourceQuery(source, sid)}&.mp4`;
+    const url = `${iproxyPath}/ace/getstream?${formatStreamSourceQuery(source, sid)}`;
     return fetch(url, requestInit);
 }
 
